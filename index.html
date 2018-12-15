@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Guess Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/nfl-logo.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="image-container">
+        <img class="banner" src="assets/images/nfl.jpg" alt="nfl image">
+    </div>
+    <div class="heading">
+        <h1>NFL Hangman Game</h1>
+    </div>
+    <div class="instruct">
+        <p>Guess the NFL Team</p>
+        <br>
+        <h2 id="wordToGuess">_ _ _ _ _ _ _</h2>
+    </div>
+    <div class="content">
+        <p>Wrong Choices </p><span id="wrongGuesses"></span>
+        <br>
+        <p>Guesses Left </p><span id="numGuesses"></span>
+        <br>
+        <p>Win Counter </p><span id="winCounter">0</span>
+        <br>
+        <p>Loss Counter </p><span id="lossCounter">0</span>
+    </div>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
