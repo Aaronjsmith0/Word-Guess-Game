@@ -68,12 +68,12 @@ function winLose() {
     if (rightGuesses === blanks) {
         wins++;
         document.getElementById('winCounter').innerHTML = wins;
-        // alert('You Win! The team was The ' + teamChosen);
+        alert('You Win! The team was The ' + teamChosen);
         reset();
     } else if (remainingGuesses === 0) {
         losses++;
         document.getElementById('lossCounter').innerHTML = losses;
-        // alert('You Lose! The team was The ' + teamChosen);
+        alert('You Lose! The team was The ' + teamChosen);
         reset();
     }
 }
