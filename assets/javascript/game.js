@@ -33,12 +33,10 @@ function startGame() {
     badLetters = [];
     successes = [];
     doubleWord = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-
     for (var i = 0; i < blanks; i++) {
         successes.push('_');
         document.getElementById('wordToGuess').innerHTML = successes;
     }
-
     document.getElementById('wordToGuess').innerHTML = successes.join(' ');
     document.getElementById('numGuesses').innerHTML = remainingGuesses;
     document.getElementById('winCounter').innerHTML = wins;
@@ -47,7 +45,6 @@ function startGame() {
 }
 
 function compareLetters(userKey) {
-    console.log('WORKING!');
     if (teamChosen.indexOf(userKey) > -1) {
         for (var i = 0; i < blanks; i++) {
             if (numberOfLetters[i] === userKey) {
